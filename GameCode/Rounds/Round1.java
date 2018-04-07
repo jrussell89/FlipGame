@@ -1,4 +1,4 @@
-package FlipGame.GameCode;
+package FlipGame.GameCode.Rounds;
 
 public class Round1 {
 }

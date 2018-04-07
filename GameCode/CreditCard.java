@@ -1,11 +1,13 @@
 package FlipGame.GameCode;
 
 public enum CreditCard {
-    CARD1(0), CARD2(0), CARD3(0);
+    CARD1(95,15), CARD2(75,10), CARD3(60,20);
 
-    int interest;
+    double annualFee;
+    double interest;
 
-    CreditCard(int interest) {
+    CreditCard(double annualFee, double interest) {
+        this.annualFee = annualFee;
         this.interest = interest;
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="200.0" layoutY="50.0" style="&#10;" text="End Of Round Question #X" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Button fx:id="nextButton" layoutX="533.0" layoutY="321.0" mnemonicParsing="false" text="Next" />
+            <CheckBox layoutX="62.0" layoutY="103.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="Criteria #1" />
+            <CheckBox layoutX="62.0" layoutY="143.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="Criteria #2" />
+            <CheckBox layoutX="62.0" layoutY="183.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="Criteria #3" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
