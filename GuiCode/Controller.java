@@ -10,8 +10,9 @@ import javafx.stage.Stage;
 public class Controller {
     Stage mainStage;
 
-    public void start() {
+    public void startRound0() {
         mainStage = Main.mainStage;
+
         mainStage.setScene(Main.nextScene);
     }
 }

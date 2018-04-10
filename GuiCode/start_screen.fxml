@@ -8,14 +8,14 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Controller">
   <children>
-    <AnchorPane fx:id="start_screen" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane fx:id="start_screen" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
         <Label alignment="CENTER" layoutX="234.0" layoutY="72.0" style="&#10;" text="Welcome to FLiP@GT" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
-            <Button fx:id="startButton" layoutX="299.0" layoutY="243.0" mnemonicParsing="false" onAction="#start" text="Start" />
+            <Button fx:id="startButton" layoutX="299.0" layoutY="243.0" mnemonicParsing="false" onAction="#startRound0" text="Start" />
       </children>
     </AnchorPane>
   </children>

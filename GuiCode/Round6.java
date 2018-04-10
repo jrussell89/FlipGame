@@ -1,7 +1,7 @@
 package FlipGame.GuiCode;
 
 public class Round6 extends Round {
-    public Round6(String screenFXML) {
-        super(screenFXML);
+    public void startNext() {
+        Main.mainStage.setScene(EndOfRoundScreen.instance.scene);
     }
 }
