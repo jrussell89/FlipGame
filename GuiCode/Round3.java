@@ -25,6 +25,10 @@ public class Round3 extends Round {
     private HBox box1, box2;
 
     private static TextField[] stocks;
+    public static String[] criteria = {"How does investing work? What are somethings to think about when investing?",
+                                       "You pay to own part of a company",
+                                       "Money grows or falls based on how the company is doing",
+                                       "Think about what the company is doing, or how the current market is doing"};
 
     public static int times = 0;
     public void startNext() {

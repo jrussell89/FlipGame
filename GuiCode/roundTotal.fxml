@@ -16,7 +16,7 @@
             <Font size="18.0" />
           </font>
         </Label>
-            <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" onMouseMoved="#init" text="Next" />
+            <Button fx:id="next" layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" onMouseMoved="#init" text="Next" />
             <Label fx:id="reportText" alignment="CENTER" layoutX="39.0" layoutY="74.0" style="&#10;" text="Round Report" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
                <font>
                   <Font size="18.0" />

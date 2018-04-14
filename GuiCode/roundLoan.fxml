@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.RoundTotal">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="251.0" layoutY="38.0" style="&#10;" text="Round 1 - Money" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
+        <Label alignment="CENTER" layoutX="189.0" layoutY="38.0" style="&#10;" text="Round Random - Loaning Money" textAlignment="CENTER" textFill="WHITE" underline="true">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <Label alignment="CENTER" layoutX="183.0" layoutY="96.0" style="&#10;" text="Watch the video and discuss money" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="question" alignment="CENTER" layoutX="155.0" layoutY="94.0" style="&#10;" text="Do you want to lend your friend $1000?" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
+            <CheckBox fx:id="yes" layoutX="289.0" layoutY="138.0" mnemonicParsing="false" text="Yes!" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
       </children>
     </AnchorPane>
   </children>

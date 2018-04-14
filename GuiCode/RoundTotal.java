@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
@@ -11,14 +13,24 @@ import javafx.scene.text.Text;
 
 public class RoundTotal {
     public static Round instance = new Round("roundTotal.fxml");
-    public static RoundTotal thisInstance = new RoundTotal();
-    private static int round = 0;
+    public static int round = 0;
     @FXML
     private Label header, reportText, cashText, bankText,
-                  totalText, pointsText, cardText;
+                  totalText, pointsText, cardText, question, badNews;
+    @FXML
+    private Button next;
+    @FXML
+    private CheckBox yes;
 
     public void init() {
-        header.setText("End of Round " + (round + 1));
+        if (round == 5) {
+            header.setText("End of Round " + round);
+        } else if (round < 7) {
+            header.setText("End of Round " + (round + 1));
+        } else {
+            next.setOpacity(0);
+            header.setText("This is the final Screen!!!");
+        }
         reportText.setText("Round Report");
         cashText.setText("Cash - $" + Main.character.cash);
         bankText.setText("Bank Balance - $" + Main.character.bank);
@@ -44,16 +56,21 @@ public class RoundTotal {
                 nextFxml = "round4.fxml";
                 break;
             case 4:
-                nextFxml = "round5.fxml";
+                nextFxml = "roundLoan.fxml";
                 break;
             case 5:
+                loans();
                 nextFxml = "round6.fxml";
                 break;
             case 6:
-                nextFxml = "round7.fxml";
+                nextFxml = "roundLoan2.fxml";
                 break;
-            case 7:
-                nextFxml = "gameEnd.fxml";
+            case 7 :
+                loans2();
+                nextFxml = "round5.fxml";
+                break;
+            case 8:
+                nextFxml = "roundTotal.fxml";
                 break;
         }
         try {
@@ -64,4 +81,13 @@ public class RoundTotal {
         }
         Main.mainStage.setScene(nextScene);
     }
+
+    private void loans() {
+        Main.character.loansMoney = yes.isSelected();
+        Main.character.takeMoney(1000);
+    }
+    private void loans2() {
+        Main.character.pay(500.0);
+    }
+
 }

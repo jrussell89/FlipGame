@@ -11,9 +11,9 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.EndOfRoundScreen">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseEntered="#init" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="210.0" layoutY="39.0" style="&#10;" text="End Of Round Question" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
+        <Label alignment="CENTER" layoutX="226.0" layoutY="30.0" style="&#10;" text="End Of Round Question" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
@@ -22,13 +22,13 @@
                <effect>
                   <ColorAdjust />
                </effect></Button>
-            <CheckBox fx:id="crit0" layoutX="141.0" layoutY="132.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE">
+            <CheckBox fx:id="crit0" layoutX="127.0" layoutY="159.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE">
                <effect>
                   <ColorAdjust />
                </effect></CheckBox>
-            <CheckBox fx:id="crit1" layoutX="141.0" layoutY="191.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
-            <CheckBox fx:id="crit2" layoutX="141.0" layoutY="254.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
-            <Label alignment="CENTER" layoutX="327.0" layoutY="95.0" style="&#10;" text="Answer Criteria:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <CheckBox fx:id="crit1" layoutX="127.0" layoutY="218.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
+            <CheckBox fx:id="crit2" layoutX="127.0" layoutY="281.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="324.0" layoutY="132.0" style="&#10;" text="Answer Criteria:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
@@ -38,14 +38,15 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Text fill="#9f9f9f" layoutX="28.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check 1 box for each criteria your team gets " wrappingWidth="121.00000381469727">
+            <Text fill="#9f9f9f" layoutX="14.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check 1 box for each criteria your team gets " wrappingWidth="121.00000381469727">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text fx:id="criteria0" fill="WHITE" layoutX="235.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blahhh blahh blahh" AnchorPane.bottomAnchor="238.0" />
-            <Text fx:id="criteria1" fill="WHITE" layoutX="235.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The mitochondria is the power hous of the cell" />
-            <Text fx:id="criteria2" fill="WHITE" layoutX="235.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The FitnessGram(TM) Pacer Test is a multistage aerobic..." />
+            <Text fx:id="criteria0" fill="WHITE" layoutX="221.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blahhh blahh blahh" AnchorPane.bottomAnchor="211.0" />
+            <Text fx:id="criteria1" fill="WHITE" layoutX="221.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The mitochondria is the power hous of the cell" />
+            <Text fx:id="criteria2" fill="WHITE" layoutX="221.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The FitnessGram(TM) Pacer Test is a multistage aerobic..." />
+            <Label fx:id="question" alignment="TOP_LEFT" layoutX="25.0" layoutY="57.0" prefHeight="96.0" prefWidth="598.0" style="&#10;" text="Question:" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
       </children>
     </AnchorPane>
   </children>

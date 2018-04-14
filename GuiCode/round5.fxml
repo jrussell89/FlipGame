@@ -32,6 +32,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <Label fx:id="roundText13" alignment="CENTER" layoutX="40.0" layoutY="206.0" style="&#10;" text="Your team was awarded $# in Scholarship funds " textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
       </children>
     </AnchorPane>
   </children>

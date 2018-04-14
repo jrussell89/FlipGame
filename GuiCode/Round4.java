@@ -25,6 +25,10 @@ public class Round4 extends Round {
     private HBox box1, box2;
 
     private static TextField[] etfs;
+    public static String[] criteria = {"What is the difference between stocks and ETFs?  What are the advantages of ETFs over stocks and vice versa?",
+                                       "Stocks are individual companies",
+                                       "ETFs are buckets of stocks",
+                                       "ETFs allow for diversification, while stocks allow you to own a piece of a company"};
 
     public static int times = 0;
     public void startNext() {

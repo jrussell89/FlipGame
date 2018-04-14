@@ -12,7 +12,7 @@ public class EndOfRoundScreen extends Round {
     @FXML
     private CheckBox crit0, crit1, crit2;
     @FXML
-    private Label criteria;
+    private Label criteria, question;
     @FXML
     private Text criteria0, criteria1, criteria2;
 
@@ -29,5 +29,29 @@ public class EndOfRoundScreen extends Round {
             Main.character.roundPoints++;
         }
         checkBox.setSelected(false);
+    }
+    public void init() {
+        String[] criteria = {"","",""};
+        switch (RoundTotal.round) {
+            case 0:
+                criteria = Round1.criteria;
+                break;
+            case 1:
+                criteria = Round2.criteria;
+                break;
+            case 2:
+                criteria = Round3.criteria;
+                break;
+            case 3:
+                criteria = Round4.criteria;
+                break;
+            case 5:
+                criteria = Round6.criteria;
+                break;
+        }
+        question.setText("Question: " + criteria[0]);
+        criteria0.setText(criteria[1]);
+        criteria1.setText(criteria[2]);
+        criteria2.setText(criteria[3]);
     }
 }

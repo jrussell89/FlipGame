@@ -13,6 +13,10 @@ public class Round6 extends Round {
     private ToggleGroup cards;
     @FXML
     private Label roundText1;
+    public static String[] criteria = {"What are different things that could impact your credit score?",
+            "Overspending, unwise spending",
+                                       "Not paying bills on time, not paying loans",
+                                       "Mentioning something about interest rates"};
 
     public void startNext() {
         if (card1.isSelected()) {
@@ -23,6 +27,7 @@ public class Round6 extends Round {
         } else if (card3.isSelected()) {
             Main.character.creditCard = CreditCard.CARD3;
         }
+        Main.character.takeMoney(Main.character.creditCard.annualFee);
         if (cards.getSelectedToggle() != null) {
             Main.mainStage.setScene(EndOfRoundScreen.instance.scene);
         } else {

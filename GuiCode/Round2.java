@@ -9,6 +9,10 @@ public class Round2 extends Round {
     private Label moneyLabel;
     @FXML
     private TextField moneyField;
+    public static String[] criteria = {"Why do you get extra money when you put your money in the bank?",
+                                       "The bank keeps your money safe",
+                                       "The bank lends your money to others",
+                                       "Interest increases your money while it's in the bank"};
 
     public void startNext() {
         try {
@@ -23,6 +27,7 @@ public class Round2 extends Round {
                     Main.character.deposit(amount);
                 }
             }
+            Main.character.bankMatch();
             Main.mainStage.setScene(EndOfRoundScreen.instance.scene);
         } catch (Exception e) {
             moneyLabel.setText("Type integer number between $0 and $" + Main.character.cash + "!");
