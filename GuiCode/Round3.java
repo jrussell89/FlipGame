@@ -14,7 +14,7 @@ public class Round3 extends Round {
     private Label roundTitle, roundText, roundText2,
                   roundText3, yourStock1, yourStock2,
                   share0, share1, share2, share3,
-                  share4, share5, share6, share7;
+                  share4, share5, share6, share7, currentMoney;
     @FXML
     private TextField stock0, stock1, stock2, stock3,
                       stock4, stock5, stock6, stock7;
@@ -100,5 +100,8 @@ public class Round3 extends Round {
                 Main.mainStage.setScene(EndOfRoundScreen.instance.scene);
             }
         }
+    }
+    public void currentMoney() {
+        currentMoney.setText("Your Money - $" + Main.character.totalMoney);
     }
 }

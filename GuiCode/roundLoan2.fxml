@@ -9,15 +9,20 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.RoundTotal">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#currentMoney2" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="189.0" layoutY="38.0" style="&#10;" text="Round Random - Loaning Money" textAlignment="CENTER" textFill="WHITE" underline="true">
+        <Label alignment="CENTER" layoutX="188.0" layoutY="25.0" style="&#10;" text="Round Random - Loaning Money" textAlignment="CENTER" textFill="WHITE" underline="true">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
             <Label fx:id="badNews" alignment="CENTER" layoutX="91.0" layoutY="121.0" prefHeight="106.0" prefWidth="459.0" style="&#10;" text="If you loaned money, you lost half of the money you gave your friend" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentMoney2" layoutX="32.0" layoutY="52.0" onMouseMoved="#currentMoney2" text="Your Money - $#" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>

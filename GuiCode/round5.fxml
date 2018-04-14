@@ -11,13 +11,13 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#update" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="217.0" layoutY="33.0" style="&#10;" text="Round 5 - College Loans" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
+        <Label alignment="CENTER" layoutX="217.0" layoutY="33.0" style="&#10;" text="Round 6 - College Funds" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <Label fx:id="roundText1" alignment="CENTER" layoutX="125.0" layoutY="86.0" style="&#10;" text="Your team was awarded $# in Scholarship funds " textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="roundText1" alignment="CENTER" layoutX="100.0" layoutY="87.0" style="&#10;" text="Your team was awarded $# in Scholarship funds " textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
@@ -27,12 +27,12 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="roundText12" alignment="CENTER" layoutX="62.0" layoutY="156.0" style="&#10;" text="After four years of College you have accrued $# in Student Loans" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="roundText12" alignment="CENTER" layoutX="198.0" layoutY="155.0" prefHeight="27.0" prefWidth="244.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="roundText13" alignment="CENTER" layoutX="40.0" layoutY="206.0" style="&#10;" text="Your team was awarded $# in Scholarship funds " textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="currentMoney" layoutX="27.0" layoutY="29.0" text="Your Money - $#" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>

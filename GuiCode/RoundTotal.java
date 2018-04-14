@@ -7,16 +7,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Background;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 
 public class RoundTotal {
     public static Round instance = new Round("roundTotal.fxml");
     public static int round = 0;
     @FXML
     private Label header, reportText, cashText, bankText,
-                  totalText, pointsText, cardText, question, badNews;
+                  totalText, pointsText, cardText, currentMoney, currentMoney2;
     @FXML
     private Button next;
     @FXML
@@ -91,6 +88,12 @@ public class RoundTotal {
     private void loans2() {
         if (Main.character.loansMoney)
         Main.character.pay(500.0);
+    }
+    public void currentMoney() {
+        currentMoney.setText("Your Money - $" + Main.character.totalMoney);
+    }
+    public void currentMoney2() {
+        currentMoney2.setText("Your Money - $" + Main.character.totalMoney);
     }
 
 }

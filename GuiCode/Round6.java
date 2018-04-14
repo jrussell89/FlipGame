@@ -12,7 +12,7 @@ public class Round6 extends Round {
     @FXML
     private ToggleGroup cards;
     @FXML
-    private Label roundText1;
+    private Label roundText1, currentMoney;
     public static String[] criteria = {"What are different things that could impact your credit score?",
             "Overspending, unwise spending",
                                        "Not paying bills on time, not paying loans",
@@ -33,5 +33,8 @@ public class Round6 extends Round {
         } else {
             roundText1.setText("Please pick a card!");
         }
+    }
+    public void currentMoney() {
+        currentMoney.setText("Your Money - $" + Main.character.totalMoney);
     }
 }

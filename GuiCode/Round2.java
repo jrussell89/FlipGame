@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 
 public class Round2 extends Round {
     @FXML
-    private Label moneyLabel;
+    private Label moneyLabel,currentMoney;
     @FXML
     private TextField moneyField;
     public static String[] criteria = {"Why do you get extra money when you put your money in the bank?",
@@ -32,5 +32,8 @@ public class Round2 extends Round {
         } catch (Exception e) {
             moneyLabel.setText("Type integer number between $0 and $" + Main.character.cash + "!");
         }
+    }
+    public void currentMoney() {
+        currentMoney.setText("Your Money - $" + Main.character.totalMoney);
     }
 }

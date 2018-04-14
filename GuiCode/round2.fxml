@@ -10,7 +10,7 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round2">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#currentMoney" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
         <Label fx:id="moneyLabel" alignment="CENTER" layoutX="148.0" layoutY="82.0" style="&#10;" text="Type how much money to put in the bank" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
           <font>
@@ -29,6 +29,11 @@
                </font>
             </TextField>
             <Label alignment="CENTER" layoutX="274.0" layoutY="119.0" style="&#10;" text="\$" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentMoney" layoutX="39.0" layoutY="34.0" text="Your Money - $#" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
