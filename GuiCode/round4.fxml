@@ -1,26 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round4">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round4">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="204.0" layoutY="39.0" style="&#10;" text="Question Prompt goes here" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label fx:id="roundTitle" alignment="CENTER" layoutX="234.0" layoutY="28.0" style="&#10;" text="Round 4 - ETFs First" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
-            <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <ButtonBar layoutX="220.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0" />
-            <ListView fx:id="choiceList" layoutX="214.0" layoutY="98.0" prefHeight="200.0" prefWidth="200.0" />
+            <VBox layoutX="224.0" layoutY="133.0" prefHeight="200.0" prefWidth="77.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="stock0" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock1" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock2" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock3" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+               </children>
+            </VBox>
+            <VBox layoutX="531.0" layoutY="133.0" prefHeight="200.0" prefWidth="77.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="stock4" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock5" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock6" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+                  <TextField fx:id="stock7" maxWidth="100.0" minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="89.0" promptText="\$0" />
+               </children>
+            </VBox>
+            <Label layoutX="15.0" layoutY="134.0" text="SocialMediaM" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="186.0" text="WomenWhoL" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="233.0" text="RobotsRising" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="283.0" text="YoungMoney" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="314.0" layoutY="134.0" text="PublicWorks" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="315.0" layoutY="186.0" text="RetailTherapy" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="315.0" layoutY="236.0" text="AllThatGlitters" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="310.0" layoutY="283.0" text="SmallButMighty" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="roundText" alignment="CENTER" layoutX="77.0" layoutY="61.0" style="&#10;" text="Enter the amount you would like to invest in these companies" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="roundText2" layoutX="41.0" layoutY="327.0" prefHeight="21.0" prefWidth="496.0" />
+            <Label fx:id="yourETF1" alignment="CENTER" layoutX="148.0" layoutY="95.0" style="&#10;" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="yourETF2" alignment="CENTER" layoutX="452.0" layoutY="101.0" style="&#10;" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="roundText3" alignment="CENTER" layoutX="22.0" layoutY="353.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox fx:id="box1" disable="true" layoutX="132.0" layoutY="139.0" opacity="0.0" prefHeight="168.0" prefWidth="102.0">
+               <children>
+                  <VBox prefHeight="189.0" prefWidth="31.0" spacing="27.0">
+                     <children>
+                        <CheckBox fx:id="buy0" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy1" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy2" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy3" mnemonicParsing="false" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="77.0" spacing="20.0">
+                     <children>
+                        <Label fx:id="share0" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share1" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share2" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share3" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="box2" disable="true" layoutX="439.0" layoutY="139.0" opacity="0.0" prefHeight="168.0" prefWidth="102.0">
+               <children>
+                  <VBox prefHeight="189.0" prefWidth="31.0" spacing="27.0">
+                     <children>
+                        <CheckBox fx:id="buy4" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy5" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy6" mnemonicParsing="false" />
+                        <CheckBox fx:id="buy7" mnemonicParsing="false" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="77.0" spacing="20.0">
+                     <children>
+                        <Label fx:id="share4" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share5" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share6" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="share7" alignment="CENTER" style="&#10;" text="\$#" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="544.0" layoutY="338.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
       </children>
     </AnchorPane>
   </children>

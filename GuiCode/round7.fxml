@@ -1,26 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round7">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round7">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="444.0" prefWidth="736.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="204.0" layoutY="39.0" style="&#10;" text="Question Prompt goes here" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="204.0" layoutY="30.0" style="&#10;" text="Round 7 - Vaction Budgeting" textAlignment="CENTER" textFill="WHITE" underline="true">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button fx:id="nextButton" layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <ButtonBar layoutX="220.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0" />
-            <ListView fx:id="choiceList" layoutX="214.0" layoutY="98.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label fx:id="roundText1" alignment="CENTER" layoutX="98.0" layoutY="57.0" style="&#10;" text="Choose a destination" textAlignment="CENTER" textFill="#9f9f9f" underline="true" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="roundText11" alignment="CENTER" layoutX="90.0" layoutY="253.0" style="&#10;" text="Choose 3 Resturants" textAlignment="CENTER" textFill="#9f9f9f" underline="true" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="roundText111" alignment="CENTER" layoutX="377.0" layoutY="72.0" style="&#10;" text="Choose 4 or more activities" textAlignment="CENTER" textFill="#9f9f9f" underline="true" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="44.0" layoutY="276.0" prefHeight="97.0" prefWidth="276.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <CheckBox fx:id="rest0" mnemonicParsing="false" text="Wings" />
+                  <CheckBox fx:id="rest3" mnemonicParsing="false" text="Sushi" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="rest1" mnemonicParsing="false" text="Snow Crab" GridPane.columnIndex="1" />
+                  <CheckBox fx:id="rest4" mnemonicParsing="false" text="Pork Luau" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="rest5" mnemonicParsing="false" text="Pizza" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="rest2" mnemonicParsing="false" text="Steak" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="361.0" layoutY="106.0" prefHeight="196.0" prefWidth="299.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="128.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <CheckBox fx:id="act2" mnemonicParsing="false" text="Hot Air Balloon" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="act4" mnemonicParsing="false" text="Movies" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="act6" mnemonicParsing="false" text="Segway Tour" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="act8" mnemonicParsing="false" text="Plane Tour" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="act1" mnemonicParsing="false" text="Music Festival" GridPane.columnIndex="1" />
+                  <CheckBox fx:id="act3" mnemonicParsing="false" text="Scuba Diving" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="act5" mnemonicParsing="false" text="Bungee jump" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="act7" mnemonicParsing="false" text="Landmark Visit" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="act9" mnemonicParsing="false" text="Jet Ski" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="act0" mnemonicParsing="false" text="Bike riding" />
+               </children>
+            </GridPane>
+            <RadioButton fx:id="dest0" layoutX="43.0" layoutY="87.0" mnemonicParsing="false" text="Hawaii">
+               <toggleGroup>
+                  <ToggleGroup fx:id="destinations" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="dest1" layoutX="163.0" layoutY="87.0" mnemonicParsing="false" text="Rio" toggleGroup="$destinations" />
+            <RadioButton fx:id="dest2" layoutX="43.0" layoutY="116.0" mnemonicParsing="false" text="France" toggleGroup="$destinations" />
+            <RadioButton fx:id="dest3" layoutX="163.0" layoutY="116.0" mnemonicParsing="false" text="Australia" toggleGroup="$destinations" />
+            <RadioButton fx:id="dest4" layoutX="43.0" layoutY="145.0" mnemonicParsing="false" text="Spain" toggleGroup="$destinations" />
+            <RadioButton fx:id="dest5" layoutX="163.0" layoutY="145.0" mnemonicParsing="false" text="Greece" toggleGroup="$destinations" />
+            <Label fx:id="roundText12" alignment="CENTER" layoutX="98.0" layoutY="166.0" style="&#10;" text="Choose a hotel" textAlignment="CENTER" textFill="#9f9f9f" underline="true" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="hot0" layoutX="43.0" layoutY="193.0" mnemonicParsing="false" text="Ritz Carlton">
+               <toggleGroup>
+                  <ToggleGroup fx:id="hotels" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="hot1" layoutX="163.0" layoutY="193.0" mnemonicParsing="false" text="Motel 6" toggleGroup="$hotels" />
+            <RadioButton fx:id="hot2" layoutX="43.0" layoutY="222.0" mnemonicParsing="false" text="Hilton" toggleGroup="$hotels" />
+            <RadioButton fx:id="hot3" layoutX="163.0" layoutY="222.0" mnemonicParsing="false" text="Holiday Inn" toggleGroup="$hotels" />
       </children>
     </AnchorPane>
   </children>

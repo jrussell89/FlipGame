@@ -8,22 +8,32 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round0">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round0">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="204.0" layoutY="39.0" style="&#10;" text="Round0 - Character Creation" textAlignment="CENTER" textFill="#9f9f9f" underline="true" wrapText="false">
+        <Label alignment="CENTER" layoutX="204.0" layoutY="39.0" style="&#10;" text="Round0 - Character Creation" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button fx:id="nextButton" layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <Label fx:id="name" alignment="CENTER" layoutX="52.0" layoutY="81.0" style="&#10;" text="What's your name" textAlignment="CENTER" wrapText="false">
+            <Label fx:id="name" alignment="CENTER" layoutX="52.0" layoutY="81.0" style="&#10;" text="What's your character's name" textAlignment="CENTER" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
             <TextField fx:id="nameField" layoutX="52.0" layoutY="115.0" />
+            <Label fx:id="name11" alignment="TOP_LEFT" layoutX="52.0" layoutY="218.0" prefHeight="32.0" prefWidth="546.0" style="&#10;" text="The game will cover a years pay so they will get $2500 every round" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="name111" alignment="TOP_LEFT" layoutX="52.0" layoutY="180.0" prefHeight="32.0" prefWidth="546.0" style="&#10;" text="What will be thier job?" textAlignment="CENTER" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
       </children>
     </AnchorPane>
   </children>

@@ -6,11 +6,11 @@ public enum Stock {
     Apple(15,-9), Boeing(4,-5),
     CocaCola(7,10), WaltDisneyCompany(8,8);
 
-    double firstEarnings;
-    double secondEarnings;
+    public double[] earnings;
 
     Stock(double first, double second){
-        firstEarnings = 1 + (first * .01);
-        secondEarnings = 1 + (second * .01);
+        earnings = new double[2];
+        earnings[0] = 1 + (first * .01);
+        earnings[1] = 1 + (second * .01);
     }
 }

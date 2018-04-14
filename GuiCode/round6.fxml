@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round6">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlipGame.GuiCode.Round6">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="204.0" layoutY="39.0" style="&#10;" text="Question Prompt goes here" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="229.0" layoutY="31.0" style="&#10;" text="Round 6 - Credit Cards" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <ButtonBar layoutX="220.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0" />
-            <ListView fx:id="choiceList" layoutX="214.0" layoutY="98.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label fx:id="roundText1" alignment="CENTER" layoutX="185.0" layoutY="72.0" style="&#10;" text="Which card does your team want?" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="90.0" layoutY="124.0" prefHeight="27.0" prefWidth="460.0" spacing="100.0">
+               <children>
+                  <RadioButton fx:id="card1" mnemonicParsing="false" prefWidth="80.0" text="Card 1" textFill="WHITE" underline="true">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="cards" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="card2" mnemonicParsing="false" text="Card 2" textFill="WHITE" toggleGroup="$cards" underline="true" />
+                  <RadioButton fx:id="card3" mnemonicParsing="false" text="Card 3" textFill="WHITE" toggleGroup="$cards" underline="true" />
+               </children>
+            </HBox>
+            <Label layoutX="90.0" layoutY="158.0" text="Annual Fee - $95" textFill="WHITE" />
+            <Label layoutX="272.0" layoutY="158.0" text="Annual Fee - $75" textFill="WHITE" />
+            <Label layoutX="443.0" layoutY="158.0" text="Annual Fee - $60" textFill="WHITE" />
+            <Label layoutX="90.0" layoutY="179.0" text="Interest Rate - 15%" textFill="WHITE" />
+            <Label layoutX="272.0" layoutY="179.0" text="Interest Rate - 10%" textFill="WHITE" />
+            <Label layoutX="443.0" layoutY="179.0" text="Interest Rate 20%" textFill="WHITE" />
+            <Label layoutX="90.0" layoutY="200.0" text="\$75 Bonus " textFill="WHITE" />
       </children>
     </AnchorPane>
   </children>

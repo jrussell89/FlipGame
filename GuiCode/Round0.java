@@ -2,14 +2,12 @@ package FlipGame.GuiCode;
 
 //import FlipGame.GuiCode.Rounds.Round;
 
+import FlipGame.GameCode.Character;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
-
-import java.awt.*;
 
 public class Round0 {
     public static Parent parent;
@@ -20,6 +18,7 @@ public class Round0 {
 
     public void startNext() {
         setName();
+        Main.character.pay();
         Main.mainStage.setScene(Round1.instance.scene);
     }
 
