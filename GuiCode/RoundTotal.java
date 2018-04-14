@@ -79,14 +79,17 @@ public class RoundTotal {
         } catch (java.io.IOException e) {
 
         }
+        Main.character.bankInterest();
         Main.mainStage.setScene(nextScene);
     }
 
     private void loans() {
         Main.character.loansMoney = yes.isSelected();
+        if (Main.character.loansMoney)
         Main.character.takeMoney(1000);
     }
     private void loans2() {
+        if (Main.character.loansMoney)
         Main.character.pay(500.0);
     }
 

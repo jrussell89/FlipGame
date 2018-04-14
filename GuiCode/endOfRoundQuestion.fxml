@@ -22,13 +22,13 @@
                <effect>
                   <ColorAdjust />
                </effect></Button>
-            <CheckBox fx:id="crit0" layoutX="127.0" layoutY="159.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE">
+            <CheckBox fx:id="crit0" layoutX="134.0" layoutY="133.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE">
                <effect>
                   <ColorAdjust />
                </effect></CheckBox>
-            <CheckBox fx:id="crit1" layoutX="127.0" layoutY="218.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
-            <CheckBox fx:id="crit2" layoutX="127.0" layoutY="281.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
-            <Label alignment="CENTER" layoutX="324.0" layoutY="132.0" style="&#10;" text="Answer Criteria:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <CheckBox fx:id="crit1" layoutX="134.0" layoutY="192.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
+            <CheckBox fx:id="crit2" layoutX="134.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="154.0" text="+1.0" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="331.0" layoutY="106.0" style="&#10;" text="Answer Criteria:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
@@ -38,15 +38,15 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Text fill="#9f9f9f" layoutX="14.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check 1 box for each criteria your team gets " wrappingWidth="121.00000381469727">
+            <Text fill="#9f9f9f" layoutX="21.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check 1 box for each criteria your team gets " wrappingWidth="121.00000381469727">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text fx:id="criteria0" fill="WHITE" layoutX="221.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blahhh blahh blahh" AnchorPane.bottomAnchor="211.0" />
-            <Text fx:id="criteria1" fill="WHITE" layoutX="221.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The mitochondria is the power hous of the cell" />
-            <Text fx:id="criteria2" fill="WHITE" layoutX="221.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The FitnessGram(TM) Pacer Test is a multistage aerobic..." />
-            <Label fx:id="question" alignment="TOP_LEFT" layoutX="25.0" layoutY="57.0" prefHeight="96.0" prefWidth="598.0" style="&#10;" text="Question:" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label fx:id="question" alignment="TOP_LEFT" layoutX="21.0" layoutY="59.0" prefHeight="78.0" prefWidth="598.0" style="&#10;" text="Question:" textFill="WHITE" wrapText="true" />
+            <Label fx:id="criteria2" alignment="TOP_LEFT" layoutX="211.0" layoutY="265.0" prefHeight="55.0" prefWidth="417.0" style="&#10;" text="The FitnessGram(TM) Pacer Test is a multistage aerobic..." textFill="WHITE" wrapText="true" />
+            <Label fx:id="criteria1" alignment="TOP_LEFT" layoutX="207.0" layoutY="205.0" prefHeight="55.0" prefWidth="417.0" style="&#10;" text="The mitochondria is the power hous of the cell" textFill="WHITE" wrapText="true" />
+            <Label fx:id="criteria0" alignment="TOP_LEFT" layoutX="207.0" layoutY="144.0" prefHeight="55.0" prefWidth="417.0" style="&#10;" text="Blahhh blahh blahh" textFill="WHITE" wrapText="true" />
       </children>
     </AnchorPane>
   </children>

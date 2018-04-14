@@ -17,7 +17,7 @@
           </font>
         </Label>
             <Button layoutX="541.0" layoutY="322.0" mnemonicParsing="false" onAction="#startNext" text="Next" />
-            <Label fx:id="badNews" alignment="CENTER" layoutX="132.0" layoutY="119.0" style="&#10;" text="You lost half of the money you gave your friend" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="badNews" alignment="CENTER" layoutX="91.0" layoutY="121.0" prefHeight="106.0" prefWidth="459.0" style="&#10;" text="If you loaned money, you lost half of the money you gave your friend" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font>

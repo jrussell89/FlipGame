@@ -10,6 +10,7 @@ public class Character {
     public double cash;
     public double bank;
     public double totalMoney;
+    public double scholarship;
     public CreditCard creditCard = CreditCard.defaultCard;
     public HashMap<Stock, Double> stocks;
     public HashMap<ETF, Double> etfs;
@@ -33,7 +34,8 @@ public class Character {
     }
     public void pay(Double amount) {
         if (amount != null) {
-            cash += Math.round(amount);
+            cash += Math.round(amount)/2;
+            payBank(amount/2);
             totalMoney += Math.round(amount);
         }
     }
@@ -63,9 +65,8 @@ public class Character {
     }
 
     public double giveScholarship(){
-        double scholarshipAmount = 6250 * .02 * roundPoints;
-        pay(scholarshipAmount + 5000);
-        return scholarshipAmount;
+        scholarship = 6250 * .02 * roundPoints;
+        return scholarship;
     }
 
     public void takeMoney(double amount) {
@@ -79,5 +80,14 @@ public class Character {
             bank -= amount;
         }
         totalMoney = bank + cash;
+    }
+    public void bankInterest() {
+        totalMoney += Math.round(bank * .02);
+        bank += Math.round(bank * .02);
+    }
+    public void payBank(Double amount) {
+        if (amount != null) {
+            bank += Math.round(amount);
+        }
     }
 }
