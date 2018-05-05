@@ -1,4 +1,4 @@
-package FlipGame.GameCode;
+package FlipGame.GuiCode;
 
 public enum CreditCard {
     CARD1(95,15), CARD2(75,10), CARD3(60,20), defaultCard(0,0);

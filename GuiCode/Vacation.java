@@ -1,4 +1,4 @@
-package FlipGame.GameCode;
+package FlipGame.GuiCode;
 
 import java.util.ArrayList;
 

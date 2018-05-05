@@ -1,6 +1,5 @@
 package FlipGame.GuiCode;
 
-import FlipGame.GameCode.Stock;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;

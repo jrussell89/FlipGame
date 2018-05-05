@@ -3,9 +3,6 @@ package FlipGame.GuiCode;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
-
-import java.awt.*;
 
 public class Round {
     Parent parent;

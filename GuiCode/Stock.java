@@ -1,4 +1,4 @@
-package FlipGame.GameCode;
+package FlipGame.GuiCode;
 
 public enum Stock {
     Netflix(11, -1),ExxonMobile(-1,-10),

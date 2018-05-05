@@ -1,8 +1,5 @@
 package FlipGame.GuiCode;
 
-//import FlipGame.GuiCode.Rounds.Round;
-
-import FlipGame.GameCode.Character;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

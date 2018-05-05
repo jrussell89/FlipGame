@@ -1,4 +1,4 @@
-package FlipGame.GameCode;
+package FlipGame.GuiCode;
 
 public enum ETF {
     SocialMediaMania(-8,13), WomenWhoLead(4,17),
